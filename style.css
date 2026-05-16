@@ -1,0 +1,201 @@
+/* -------------------------------
+   Header styling
+---------------------------------*/
+header {
+  background-color: #004080; /* Dark blue background for header */
+  padding: 20px;             /* Space inside header */
+  text-align: center;        /* Center the header text */
+  font-size: 35px;           /* Large font size */
+  color: white;              /* White text color */
+}
+
+/* -------------------------------
+   Body styling
+---------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Default font */
+  background-color: lightseagreen;          /* Page background color */
+  margin: 0;                                 /* Remove default margin */
+  padding: 0;                                /* Remove default padding */
+}
+
+/* -------------------------------
+   Headings
+---------------------------------*/
+h1 {
+  text-align: center;  /* Center align main headings */
+  padding: 10px;       /* Space around heading */
+}
+
+h2 {
+  text-align: center;  /* Center align subheadings */
+  padding: 10px;
+}
+
+/* -------------------------------
+   Navigation bar
+---------------------------------*/
+.navbar {
+  background-color: lightblue; /* Navbar background color */
+  text-align: center;          /* Center links inside navbar */
+  padding: 10px;               /* Padding inside navbar */
+}
+
+.navbar ul li {
+  display: inline;    /* Display links horizontally */
+  margin-right: 80px; /* Space between links */
+}
+
+.navbar ul li a {
+  color: darkmagenta;       /* Link color */
+  text-decoration: none;    /* Remove underline */
+}
+
+/* -------------------------------
+   Forms
+---------------------------------*/
+.forms {
+  color: rgb(255, 217, 0);       /* Yellow text color */
+  padding: 10px;                  /* Padding inside form container */
+  text-align: center;             /* Center form elements */
+  font-size: 15px;                /* Font size */
+  font-family: Verdana;           /* Font family */
+  margin: 20px 20px;              /* Space around form container */
+}
+
+/* -------------------------------
+   About / Text sections
+---------------------------------*/
+.first {
+  color: blue;
+  float: left;           /* Float left */
+  width: 45%;            /* Width 45% of container */
+  padding: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana;
+}
+
+.second {
+  color: blue;
+  float: right;          /* Float right */
+  width: 45%;
+  padding: 5px;
+  text-align: center;
+  font-size: 40px;
+  font-family: Verdana;
+}
+
+.final {
+  color: blue;
+  width: 85%;
+  height: 100%;
+  padding: 70px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana;
+}
+
+.about_us_text {
+  color: blue;
+  width: 85%;
+  height: 100%;
+  padding: 70px;
+  text-align: justify; /* Justify text for paragraphs */
+  font-size: 25px;
+  font-family: Verdana;
+}
+
+.products_text {
+  color: blue;
+  width: 85%;
+  height: 100%;
+  padding: 70px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Verdana;
+}
+
+/* -------------------------------
+   Images
+---------------------------------*/
+.cross-image {
+  width: 450px;
+  height: 300px;
+  border-radius: 8px; /* Rounded corners */
+  margin: 40px 60px;
+}
+
+.bridge-image {
+  width: 600px;
+  height: 350px;
+  border-radius: 8px;
+  margin: 40px 60px;
+}
+
+.product-image {
+  display: block;
+  margin: 25px auto; /* Center image horizontally */
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.product-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.titles{ 
+    color: blue; 
+    text-align: center; 
+    font-size: 18px; 
+    font-family: "Verdana" 
+}
+
+/* -------------------------------
+   Video styling
+---------------------------------*/
+.video {
+  display: block;
+  margin: 20px auto;     /* Center the video horizontally */
+  border: 5px solid #ff0000; /* Red border */
+  border-radius: 10px;
+  width: 1000px;
+  height: 600px;
+}
+
+/* -------------------------------
+   Forms (flex layout)
+---------------------------------*/
+form {
+  display: flex;
+  flex-direction: column; /* Stack input fields vertically */
+  align-items: center;    /* Center all elements horizontally */
+  gap: 10px;              /* Space between inputs */
+}
+
+/* -------------------------------
+   Product row layout
+---------------------------------*/
+.image-row {
+  display: flex;                 /* Flex container */
+  justify-content: center;       /* Center the row */
+  gap: 20px;                     /* Space between items */
+  flex-wrap: wrap;               /* Wrap items on smaller screens */
+}
+
+.item {
+  text-align: center;            /* Center text below each image */
+}
+
+/* -------------------------------
+   Footer
+---------------------------------*/
+footer {
+  background-color: #004080; /* Dark blue background */
+  color: white;              /* White text */
+  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
+}

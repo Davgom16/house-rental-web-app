@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ART-HAND</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body { font-family: Arial; padding: 20px; background: #fafafa; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        img { width: 80px; border-radius: 6px; }
+        button { padding: 6px 12px; margin: 2px; background: #0077cc; color: #fff; border: none; cursor: pointer; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header section displaying the website name -->
+    <header>
+        <h2>ART-HANDS</h2> <!-- Website title -->
+    </header>
+
+    <!-- Main welcome heading introducing the page -->
+    <h1>Welcome to your Local Artisan Marketplace</h1>
+
+    <!-- Navigation bar with links to other pages on the website -->
+    <div class="navbar">
+        <ul>
+            <!-- Each list item (<li>) contains a hyperlink (<a>) to another page -->
+            <li><a href="Home_page.html">Home</a></li>
+            <li><a href="Seller_Buyer.html">Login / Sign up</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About_us.html">About us</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+            <li><a href="checkout.html">Your Cart</a></li>
+        </ul>
+    </div>
+
+
+<h1>Your Shopping Cart</h1>
+
+<table id="cart-table">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Image</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="cart-table-body">
+        <!-- Cart items will be loaded here -->
+    </tbody>
+</table>
+
+<h2 id="cart-total">Total: $0.00</h2>
+
+<button id="checkout-btn">Checkout</button>
+<script src="code.js"></script>
+</body>
+</html>

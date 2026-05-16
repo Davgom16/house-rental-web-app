@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART-HAND</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Sign_in_form.js" defer></script>
+</head>
+<body>
+    <!-- Header section containing the website name -->
+    <header>
+        <h2>ART-HANDS</h2> <!-- Website or brand title -->
+    </header>
+
+    <!-- Main welcome heading -->
+    <h1>Welcome to your Local Artisan Marketplace</h1>
+
+    <!-- Navigation bar for page links -->
+    <div class="navbar">
+        <ul>
+            <!-- Navigation links to other pages -->
+            <li><a href="Home_page.html">Home</a></li>
+            <li><a href="Seller_Buyer.html">Login / Sign up</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About_us.html">About us</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Section title introducing the account creation form -->
+    <h2>If you want to create an account please fill the next fields</h2>
+
+    <!-- Container that groups all form elements together -->
+    <div class="forms">
+
+        <!-- Sign-up form -->
+        <!-- The onsubmit attribute calls a JavaScript function 'validatesigninform()' -->
+        <!-- If the function returns false, the form won't submit -->
+        <form id="Sign_in_form" onsubmit="return validatesigninform()">
+
+            <!-- Input field for user's full name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+
+            <!-- Input field for user's email address -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <!-- Input field for user's phone number -->
+            <label for="phone_number">Phone number:</label>
+            <input type="tel" id="phone_number" name="phone_number">
+            <br>
+
+            <!-- Input field for user's desired username -->
+            <label for="newusername">User name:</label>
+            <input type="text" id="newusername" name="newusername">
+            <br>
+
+            <!-- Input field for the new password -->
+            <label for="newpassword">New password:</label>
+            <input type="password" id="newpassword" name="newpassword">
+            <br>
+
+            <!-- Input field to confirm the password -->
+            <label for="newpassword2">Confirm password:</label>
+            <input type="password" id="newpassword2" name="newpassword2">
+            <br>
+
+            <!-- Submit button to send the form data for validation and account creation -->
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+</body>
+</html>

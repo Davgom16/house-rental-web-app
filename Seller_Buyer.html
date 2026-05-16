@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART-HAND</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Login_form.js" defer></script>
+</head>
+<body>
+    <!-- Header section displaying the website name -->
+    <header>
+        <h2>ART-HANDS</h2> <!-- Website title -->
+    </header>
+
+    <!-- Main welcome heading -->
+    <h1>Welcome to your Local Artisan Marketplace</h1>
+
+    <!-- Navigation bar with links to other pages -->
+    <div class="navbar">
+        <ul>
+            <li><a href="Home_page.html">Home</a></li>
+            <li><a href="Seller_Buyer.html">Login / Sign up</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About_us.html">About us</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Section for login form -->
+    <h2>To login please fill the next fields</h2>
+
+    <div class="forms">
+        <!-- Login form -->
+        <!-- The onsubmit attribute calls the JavaScript function 'Login_form()' -->
+        <form id="Login_form" onsubmit="return Login_form()">
+
+            <!-- Username input -->
+            <label for="username">User name:</label>
+            <input type="text" id="username" name="username">
+            <br>
+
+            <!-- Password input -->
+            <label for="password">Password:</label>
+            <input type="text" id="password" name="password">
+
+            <!-- Forgot password link -->
+            <p><a href="#" id="forgotPassword">FORGOT PASSWORD</a></p>
+
+            <!-- Placeholder for the message shown after clicking "Forgot Password" -->
+            <p id="forgot-message" style="color: rgb(128, 41, 0); display: none;"></p>
+
+            <!-- Link to the create account page -->
+            <p><a href="New_account.html">CREATE AN ACCOUNT</a></p>
+            <br>
+
+            <!-- Login submit button -->
+            <button type="Login">Sign in</button>
+        </form>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 ART-HAND. All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript to handle "Forgot Password" click -->
+    <script>
+        // Select the "Forgot Password" link
+        document.getElementById("forgotPassword").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the page from reloading when the link is clicked
+
+            // Select the message paragraph and update its text
+            const message = document.getElementById("forgot-message");
+            message.textContent = "A new password was sent to your e-mail";
+
+            // Make the message visible
+            message.style.display = "block";
+        });
+    </script>
+</body>
+</html>

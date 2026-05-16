@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART-HAND</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="contact_form.js" defer></script>
+</head>
+<body>
+    <!-- Header section containing the site name -->
+    <header>
+        <h2>ART-HANDS</h2> <!-- Website or brand title -->
+    </header>
+
+    <!-- Main heading / welcome message -->
+    <h1>Welcome to your Local Artisan Marketplace</h1>
+
+    <!-- Navigation bar section -->
+    <div class="navbar">
+        <ul>
+            <!-- Navigation menu links to other pages -->
+            <li><a href="Home_page.html">Home</a></li>
+            <li><a href="Seller_Buyer.html">Login / Sign up</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="About_us.html">About Us</a></li>
+            <li><a href="Contact_us.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Contact form section -->
+    <div>
+        <h2>Contact with us</h2>
+
+        <!-- Form that collects user contact details -->
+        <!-- The onsubmit attribute calls the JavaScript validation function "contactForm()" -->
+        <form id="contactForm" onsubmit="return contactForm()">
+
+            <!-- Name input field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br>
+
+            <!-- Email input field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <!-- Phone number input field -->
+            <label for="Phone_number">Phone number:</label>
+            <input type="Phone_number" id="Phone_number" name="Phone_number">
+            <br>
+
+            <!-- Message textarea where the user writes their message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <br>
+
+            <!-- Submit button that triggers form validation and submission -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 ART-HAND. All rights reserved</p>
+    </footer>
+</body>
+</html>
